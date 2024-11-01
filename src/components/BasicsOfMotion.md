@@ -1,6 +1,6 @@
 ### Framer Motion is used to animate the appearance and disappearace of a <motion.div> element when a button is clicked. Let's expalin it.
 
-## 1. Container <div>
+## 1. Container ```<div>```
 
 ```
 <div style={{
@@ -20,10 +20,8 @@
 - gap: "0.8rem" addes spacing between child elements(the button and the animated div).
 
 ## 2. Toggle Button (motion.button)
-
+- jsx
 ```
-->jsx
-<hr style="border:1px solid gray">
 <motion.button
     onCick={()=> setIsVisible(!isVisible)}
     className="bg-green-400 px-4 py-2 rounded-lg text-gray-800 font-semibold"
