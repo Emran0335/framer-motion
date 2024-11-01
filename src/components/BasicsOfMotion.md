@@ -13,7 +13,8 @@
 </div>
 ```
 
- \*\* The outermost ```<div>``` is styled to center its contents both vertically and horizontally
+\*\* The outermost `<div>` is styled to center its contents both vertically and horizontally
+
 - display: "grid" with placeContent: "center" ensures that everything inside this div is centered.
 - height: "100vh" makes the container take the full viewport height.
 - gap: "0.8rem" addes spacing between child elements(the button and the animated div).
@@ -22,6 +23,7 @@
 
 ```
 ->jsx
+<hr style="border:1px solid gray">
 <motion.button
     onCick={()=> setIsVisible(!isVisible)}
     className="bg-green-400 px-4 py-2 rounded-lg text-gray-800 font-semibold"
@@ -29,3 +31,10 @@
     Show/Hide
 </motion.button>
 ```
+
+- This is a toggle button that changes the visibility of the `<motion.div>` when clicked.
+- It uses setIsVisible to update isVisible to its opposite value(!isVisible), toggling the div's display.
+- Framer Motion's `<motion.button>` wraps the button element, allowing you to animate it directly if needed.
+- The className includes Tailwind CSS classes to style the button with a green background, padding, rounded corners, and text styling.
+
+## 3. `<AnimatePresence>` Wrapper
