@@ -40,3 +40,31 @@ jsx
 - The className includes Tailwind CSS classes to style the button with a green background, padding, rounded corners, and text styling.
 
 ## 3. `<AnimatePresence>` Wrapper
+
+
+<div>
+  <pre id="code-block">
+    <code>
+// Code example
+const sessionCache = new WeakMap();
+function getUserSession(user) {
+  if (sessionCache.has(user)) {
+    return sessionCache.get(user);
+  }
+  const session = { id: user.id, data: `Session data for ${user.name}` };
+  sessionCache.set(user, session);
+  return session;
+}
+    </code>
+  </pre>
+  <button onclick="copyCode()">Copy</button>
+</div>
+
+<script>
+function copyCode() {
+  const code = document.querySelector("#code-block").innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Code copied!");
+  });
+}
+</script>
