@@ -48,3 +48,7 @@ jsx
     {isVisible && (/* Animated div */)}
 </AnimatePresence>
 ```
+
+- AnimatePresence is a Framer Motion component that allows animations to run when elements are removed from the DOM
+- mode="popLayout" is an option that handles layout animations by reordering children when elements are added or removed.
+- Inside `<AnimatePresence>`, we conditionally render motion.div only if isVisible is true. This allows the div to animate both when it appears and when it exits.
