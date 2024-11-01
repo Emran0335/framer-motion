@@ -21,7 +21,7 @@
 ## 2. Toggle Button (motion.button)
 
 ```
-jsx
+->jsx
 <motion.button
     onCick={()=> setIsVisible(!isVisible)}
     className="bg-green-400 px-4 py-2 rounded-lg text-gray-800 font-semibold"
