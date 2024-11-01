@@ -13,7 +13,7 @@
 </div>
 ```
 
-- \*\* The outermost <div> is styled to center its contents both vertically and horizontally
+ \*\* The outermost <div> is styled to center its contents both vertically and horizontally
 - display: "grid" with placeContent: "center" ensures that everything inside this div is centered.
 - height: "100vh" makes the container take the full viewport height.
 - gap: "0.8rem" addes spacing between child elements(the button and the animated div).
