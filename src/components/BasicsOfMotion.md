@@ -41,30 +41,10 @@ jsx
 
 ## 3. `<AnimatePresence>` Wrapper
 
+jsx
 
-<div>
-  <pre id="code-block">
-    <code>
-// Code example
-const sessionCache = new WeakMap();
-function getUserSession(user) {
-  if (sessionCache.has(user)) {
-    return sessionCache.get(user);
-  }
-  const session = { id: user.id, data: `Session data for ${user.name}` };
-  sessionCache.set(user, session);
-  return session;
-}
-    </code>
-  </pre>
-  <button onclick="copyCode()">Copy</button>
-</div>
-
-<script>
-function copyCode() {
-  const code = document.querySelector("#code-block").innerText;
-  navigator.clipboard.writeText(code).then(() => {
-    alert("Code copied!");
-  });
-}
-</script>
+```
+<AnimatePresence mode="popLayout">
+    {isVisible && (/* Animated div */)}
+</AnimatePresence>
+```
