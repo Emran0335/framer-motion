@@ -6,14 +6,7 @@ const BasicsOfMotion = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
-    <div
-      style={{
-        display: "grid",
-        placeContent: "center",
-        height: "100vh",
-        gap: "0.8rem",
-      }}
-    >
+    <div className="flex justify-center flex-col gap-1">
       <motion.button
         onClick={() => setIsVisible(!isVisible)}
         className="bg-green-400 px-4 py-2 rounded-lg text-gray-800 font-semibold hover:border border-gray-400 hover:bg-green-800 hover:text-gray-200"
